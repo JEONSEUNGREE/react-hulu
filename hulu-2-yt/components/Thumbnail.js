@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import Image from "next/image";
 import { ThumbUpIcon } from "@heroicons/react/outline";
 
@@ -18,6 +18,7 @@ function Thumbnail({ result }) {
         }
         height={1080}
         width={1920}
+        alt="image"
       />
       <div>
         <p className="truncate max-w-md">{result.overview}</p>
